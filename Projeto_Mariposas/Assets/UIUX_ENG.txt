@@ -1,0 +1,134 @@
+** MENUS **
+
+** MAIN **
+
+PlayID / Start
+
+OptionsID / Options
+
+AboutID / About
+
+CreditsID / Credits
+
+QuitID / Quit
+
+BackID / Back
+
+** OPTIONS **
+
+SwitchLangID / Select the language
+
+LanguageID / Language
+
+PtbrID / Português
+
+EngID / English
+
+ConfirmID / Confirm
+
+ControlsID / Controls
+
+VolumeID / Volume
+
+BrightnessID / Brightness
+
+** TELAS DE TRANSIÇÃO **
+
+DevText_01 / A game by
+
+DevText_02 / Aracnebula Studio
+
+Transition_00 / Russia, 1890
+
+Transition_01 / 2024
+
+Transition_02 / Later that night
+
+** TUTORIAIS **
+
+Tutorial_00 / Press (A) or (D) to move
+
+Tutorial_01 / Press (Space) to advance the dialogue
+
+Tutorial_02 / Press (E) to interact
+
+Tutorial_03 / Press (W), (A), (S), or (D) to move
+
+Tutorial_04 / Click on the button to see more details
+
+Tutorial_05 / Press (Q) to examine box
+
+Tutorial_06 / Press (Q) or (Space) to go back
+
+Tutorial_07 / Press (TAB) to open the inventory
+
+Tutorial_08 / Press (W) or (S) to navigate through the inventory
+
+Tutorial_09 / Press (E) to use the selected item
+
+Tutorial_10 / Press (Space) to close the inventory 
+
+** AÇÔES DENTRO DO JOGO **
+
+Action_InteractID / (E) Interact
+
+Action_ExamineID / (Q) Examine
+
+Action_ReturnID / (Space) Back
+
+** ESCOLHAS DO JOGO **
+
+Choice_00 / Would you like to send an e-mail to the owners?
+
+Choice_00_00 / Yes
+
+Choice_00_01 / No
+
+** QUESTS DO JOGO **
+
+QuestName_00 / Home Sweet Home
+
+QuestStep_00_00 / Unload the moving boxes into their respective rooms, according to the images drawn on each box
+
+QuestName_01 / Health Comes First
+
+QuestStep_01_00 / Take the medicine prescribed by Dr. Petrosyan
+
+QuestName_02 / Under the Ground
+
+QuestStep_02_00 / Check the basement's condition
+
+QuestName_03 / Dinner Time
+
+QuestStep_03_00 / Take some food to Sarkis in the office
+
+QuestName_04 / Brute Force
+
+QuestStep_04_00 / Find a tool to open the basement door
+
+LetterID_01 / “Dear Mrs. Gasparian, 
+
+LetterID_02 / I hope you had a pleasant trip. I've been following the e-mail exchange between you and my brother, Vassilii Nikolaevich, and couldn't help but notice that you're curious about the history of the property you have rented. Obviously, the fact that this house has been empty for so long would draw your attention, and I apologize for my brother's behavior, as he refuses to saciate your curiosity and keeps changing the subject and making up excuses.
+
+LetterID_03 / The truth is that Vassilii didn't want me to tell you about this house's past, but I do believe it is more than fair to inform you, given that you'll spend around six months living in it. Therefore, shall we get straight to the point?
+
+LetterID_04 / Before belonging to my family, this property belonged to an old man named Rodion Mikhailovich Medvedev. They say that Mr. Medvedev was a stubborn, sad and elderly man, who had inherited the place after his older brother passed away, right here in this house, along with his wife and son. However, the old man, in realty, did not reside here. The house would stay empty most of the year, and Mr. Medvedev would come around May, stay for a week at most just for the necessary maintenance, and then leave. 
+
+LetterID_05 / It's most likely that the house had some sort of emotional value to him, and so he felt the need to keep it. At the same time, it was clear that being here was not good for him. His caretaker would say that he walked along the hallway at night talking to himself, as if speaking to a child, and that he cried every night before sleeping. Some say that it was the ghost of his deceised nephew. Others, that is was a daughter he had lost when he was young... But the old man himself has never spoken about it.
+
+LetterID_06 / When he died, Rodion Mikhailovich made a most unusual request to his daughter, Mrs. Nadezhda Rodionova. He asked her to keep the house, but to never let anyone else ever reside in it again. Despite not wanting to go against her father's will, Nadezhda couldn't convince her husband to spend money with the house's maintenance. And so, it was left empty and ended up abandoned for over 40 years.
+
+LetterID_07 / After Mrs Rodionova's death, the children, who didn't have any interest in fulfilling the desire of their grandfather, Rodion, put the house up for auction and my grandpa bought it. He renovated the interior, fixed the infrastructure, tended to the land, and brought it back to life, with the intention of using it as a country house. My grandpa and his family came to spend the summer a few times, but... Something was off. It seemed as though every time they spent a while here, everyone ended up arguing. Soon, they started saying there was something wrong with the house and gave up coming. My grandpa, realizing he had wasted money, became spiteful towards the place and it ended up empty for another two decades or so.
+
+LetterID_08 / When my father inherited the house, he decided that he wanted to try and make it useful by renting it, so that people could come spend their vacations here. Although some people actually showed interest, they usually gave up after coming and checking the house in person. You see, there was, in fact, nothing wrong with it. Although old, the house was (and still is) very beautiful, with a strong structure, good heating, in a lovely location... as you can see for yourself, being in it right now. Nevertheless, there seemed to be something scaring away the customers.
+
+LetterID_09 / The only time my father got to actually rent the house it was to a couple with a kid, who came to stay for two months, but ended up quitting and leaving on day three. They said that the house had a negative energy. On top of that, they also claimed to hear weird noises sometimes, as if the house was haunted, and that their son didn't want to be here anymore. That was seven years ago... Since then, no one else has lived here.
+
+LetterID_10 / As you can see, Mrs. Gasparian, the house does not have the most appealing history, and that's why Vassilii didn't want me to explain the situation to you. He, in fact, doesn't know that I am sending you this letter, so I would be thankful if you kept this exchange of ours in secret.
+
+LetterID_11 / Despite everything, I trust that you and your husband, as learned academics, will not believe these "supernatural" occurences. I, myself, have chosen to expose everything just for the sake of curiosity, but I, like my brother, believe that these stories are the mere result of strong superstition, enhanced through the generations, leading to a placebo effect of sorts.
+
+LetterID_12 / I hope that his little fanciful tale satisfies your curiosity and brings a little mystique and imagination to your day, distracting you from the sameness of every day life.
+
+LetterID_13 / Enjoy your stay,
+LetterID_14 / Maria Nikolaevna Volkova."

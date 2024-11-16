@@ -1,0 +1,573 @@
+##
+
+Pro_0000_start
+ActorLine / Irina / 0
+
+MessageLine / 0 / I don't understand why it has be like this, why things have to be the way they are...
+
+Pro_0000_end
+
+##
+
+Pro_0001_start
+ActorLine / Irina / 0
+
+MessageLine / 0 /Stop yelling...
+
+Pro_0001_end
+
+##
+
+Pro_0002_start
+ActorLine / Irina / 0
+
+MessageLine / 0 /Where are you?
+
+MessageLine / 0 /I need you...
+
+Pro_0002_end
+
+##
+
+Pro_0003_start
+ActorLine / Irina / 0
+
+MessageLine / 0 / Found you.
+
+Pro_0003_end
+
+##
+
+CasaInt_0000_start
+ActorLine / Anoush / 2
+ActorLine / Sarkis / 3
+
+MessageLine / 0 / The moving company didn't even bother to bring the boxes inside...
+
+MessageLine / 1 / Not surprising at all. No one has rented this house in ages, the landlord probably didn't even believe someone was actually going to live here.
+
+MessageLine / 1 / Yet, it is a very beautiful house.
+
+MessageLine / 0 / The only thing is... Isn't there any reason why no one has lived here for so long?
+
+MessageLine / 1 / Probably due to the remote location, Anoush. But that doesn't matter; this isn't a summer camp, we're here to work.
+
+MessageLine / 1 / I have a few calls to make. Go and start organizing those boxes in the meantime.
+
+CasaInt_0000_end
+
+##
+
+# If interagir com sarkis até o final do puzzle #
+
+CasaInt_0001_start
+ActorLine / Sarkis / 3
+
+MessageLine / 0 / I'm on the phone right now.
+
+CasaInt_0001_end
+
+##
+
+# Puzzle das caixas começa #
+
+BoxWrong_0000_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I can't leave this box here.
+
+BoxWrong_0000_end
+
+##
+
+BoxOrder_0000_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I don't know where this is from. I'll try to take the other boxes in first.
+
+BoxOrder_0000_end
+
+##
+
+BoxSala_0000_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / The realtor told us this house has been through renovations recently. It's not unusual to find empty paint cans such as this one.
+
+BoxSala_0000_end
+
+##
+
+BoxSala_0001_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / Sarkis mentioned no one has rented this house in ages. I must admit this has me a bit uneasy.
+
+BoxSala_0001_end
+
+##
+
+BoxSala_0002_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I miss the days when I would have people over for tea. I've been feeling quite lonely in the past few years.
+
+BoxSala_0002_end
+
+##
+
+BoxSala_0003_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I miss going out with Sarkis and our friends. I wonder, would they still remember me?
+
+BoxSala_0003_end
+
+##
+
+BoxSala_0004_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I like tending to plants when I feel lonely.
+
+BoxSala_0004_end
+
+##
+
+BoxCoz_0000_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / Sometimes I wish Sarkis would help me in the kitchen. Making dinner is usually more fun with someone else to set the table.
+
+BoxCoz_0000_end
+
+##
+
+BoxCoz_0001_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I always make Sarkis' favorite food, he really might as well wash the dishes sometimes, in return.
+
+BoxCoz_0001_end
+
+##
+
+BoxQrt_0000_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / On one side, he snores, all carefree... On the other one, I suffer with intense nightmares and insomnia...
+
+MessageLine / 0 / Sometimes, it seems like we don't even sleep in the same bed.
+
+BoxQrt_0000_end
+
+##
+
+BoxQrt_0001_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / At least I can sleep now, even if it's just a little bit.
+
+BoxQrt_0001_end
+
+##
+
+BoxQrt_0002_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I miss painting on my free time. I was never really good, but it was a relaxing activity.
+
+BoxQrt_0002_end
+
+##
+
+BoxQrt_0003_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / Sarkis and I went to a lot of concerts in the 2000s. I miss the times when we had fun together.
+
+MessageLine / 0 / I really miss this version of Sarkis...
+
+BoxQrt_0003_end
+
+##
+
+BoxBan_0000_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / Dr. Petrosyan prescribed me two pills in the morning and two at night, no more and no less... but I feel a lot better when I take them.
+
+MessageLine / 0 / Maybe it wouldn't do much harm to take a few more every now and then...
+
+BoxBan_0000_end
+
+##
+
+BoxEscr_0000_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I graduated with even higher grades than Sarkis, yet now he treats me like a reaserch assistant.
+
+BoxEscr_0000_end
+
+##
+
+BoxEscr_0001_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I am glad for the success Sarkis achieved in all these years...
+
+BoxEscr_0001_end
+
+##
+
+BoxBB_0000_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / Even looking at it is difficult...
+
+BoxBB_0000_end
+
+##
+
+BoxBB_0001_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / It's still hard to accept... I...
+
+MessageLine / 0 / I just want to get out of here...
+
+BoxBB_0001_end
+
+##
+
+# IF tentar voltar pro quarto do bebê #
+
+BoxBB_0002_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I can't go back there.
+
+BoxBB_0002_end
+
+##
+
+# Puzzle das caixas completo -> tomar o remédio #
+
+MedInt_0000_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / Time to take my meds.
+
+MedInt_0000_end
+
+##
+
+# IF tentar entrar em algum lugar que não o banheiro #
+
+MedInt_0001_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / First I need to take my medicine.
+
+MedInt_0001_end
+
+##
+
+MedInt_0002_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / Would you look at that... Even here you'll show up.
+
+MedInt_0002_end
+
+##
+
+MedInt_0003_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / There's insecticide spray in here. Might be useful, but Sarkis is very allergic...
+
+MedInt_0003_end
+
+##
+
+# IF usar o inseticida #
+
+MedInt_0004_start
+ActorLine / Anoush / 2
+ActorLine / Sarkis / 3
+
+MessageLine / 1 / Anoush… cough… did you use… cough… that poison… again?
+
+MessageLine / 0 / Maybe it's best if I avoid using this...
+
+MedInt_0004_end
+
+##
+
+# IF tentar entrar no escritório **
+
+PorInt_0000_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I'd better not interrupt Sarkis at work...
+
+PorInt_0000_end
+
+##
+
+PorInt_0001_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / The realtor said that there was a basement in this house... I should check it for infiltrations or structural damage.
+
+PorInt_0001_end
+
+##
+
+PorInt_0002_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / The basement must be here.
+
+PorInt_0002_end
+
+##
+
+# (tenta abrir) #
+
+PorInt_0003_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I can't open it...
+
+MessageLine / 0 / Maybe if I use a crowbar or hammer, I might...
+
+MessageLine / 0 / I'll figure this out later.
+
+PorInt_0003_end
+
+##
+
+Janta_0000_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I need to make dinner, it's getting late.
+
+Janta_0000_end
+
+##
+
+# (fade out) #
+
+Janta_0001_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / Done. Now I just need to talk to Sarkis.
+
+Janta_0001_end
+
+##
+
+# IF tentar ir pra outros cômodos #
+
+Janta_0002_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I need to talk to Sarkis in the office.
+
+Janta_0002_end
+
+##
+
+DiscEsc_0000_start
+ActorLine / Anoush / 2
+ActorLine / Sarkis / 3
+
+MessageLine / 1 / Just what I needed, damn it...
+
+MessageLine / 0 / What happened?
+
+MessageLine / 1 / We have a problem with the samples. Apparently, they didn't send us any female specimens, only males.
+
+MessageLine / 0 / What do you mean? There were over 30 samples and not even one female?
+
+MessageLine / 1 / I called the lab and they confirmed that there are only male samples.
+
+MessageLine / 0 / That is too weird. They would have said something before! Maybe they didn't understand your question...
+
+MessageLine / 0 / Maybe there are only male samples left because they sent us the only females?
+
+MessageLine / 0 / Could it be that they were lost during transportation? But how could all the females just vanish?
+
+MessageLine / 0 / Could it really be that they were never there to begin with?
+
+MessageLine / 1 / *Sigh*
+
+MessageLine / 1 / Seems like it, Anoush. I meticulously reviewed all of the records and samples and there is no record of female moths.
+
+MessageLine / 1 / Acording to the records, they have never even got to the lab.
+
+MessageLine / 0 / Did you check professor Grigorian's notes again? He was researching these moths until last year.
+
+MessageLine / 0 / Was there anything about females?
+
+MessageLine / 1 / I did, I did...
+
+MessageLine / 0 / Do you think it's possible that the lab might have lost some of their records?
+
+MessageLine / 1 / Everything is possible! I don't know!
+
+MessageLine / 0 / Well... What do YOU think of this discrepancy?
+
+MessageLine / 1 / Don't know...
+
+MessageLine / 0 / I have a hypothesis. It might be a very blatant sexual dimorphism, similar to that of the humpback anglerfish, Melanocetus johnsonii.
+
+MessageLine / 0 / The males are so different from the females that it took years to-
+
+MessageLine / 1 / Anoush, I know, I have a doctor's degree in biology, remember?
+
+MessageLine / 0 / I was just mentioning for the sake of comparison, sorry...
+
+MessageLine / 0 / But... As you know, to this day, they could only obtain less than 10 male samples of that species, so-
+
+MessageLine / 1 / I have already considered this hypothesis, it was the first thing I thought of. We can't be sure yet.
+
+MessageLine / 1 / It's a complex situation, coming up with theories right now is useless.
+
+MessageLine / 0 / Right...
+
+MessageLine / 0 / Well. Don't you want to have dinner, then, and leave that for tomorrow?
+
+MessageLine / 1 / No... I'm not hungry... I'll be here a bit longer...
+
+DiscEsc_0000_end
+
+##
+
+# Anoush sai do escritório #
+
+DiscEsc_0001_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I'd better go to bed. I, too, lost my appetite.
+
+DiscEsc_0001_end
+
+##
+
+# Fade out. Fade in: Anoush no banheiro de madrugada. #
+
+AbrePor_0000_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I can't sleep...
+
+MessageLine / 0 / I think I'll try to get into that basement again... There must be some tool in this house that could help me.
+
+MessageLine / 0 / Maybe in those boxes with stuff we brought back from that interchange we did in Brazil, to study the Titanus giganteus beetle.
+
+AbrePor_0000_end
+
+##
+
+# IF tenta abrir antes de conseguir o martelo #
+
+AbrePor_0001_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I won't be able to pry it open with only my hands.
+
+AbrePor_0001_end
+
+##
+
+# IF tenta sair da casa #
+
+AbrePor_0002_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / I'd better not leave the house so late...
+
+AbrePor_0002_end
+
+##
+
+# IF tenta entrar no quarto #
+
+AbrePor_0003_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / Better not wake Sarkis up...
+
+AbrePor_0003_end
+
+##
+
+# EvoGen #
+
+AbrePor_0004_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / Nothing useful here, just some 'Meerkat Lelê' comics.
+
+AbrePor_0004_end
+
+##
+
+# Mini Challenges #
+
+AbrePor_0005_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / There's only a newspaper here... ''The police is still investigating the case of the missing children, Smith and Scoth.''
+
+AbrePor_0005_end
+
+##
+
+# Os Camundangos #
+
+AbrePor_0006_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / Nothing of use here, just some old CDs. I used to listen to this 'Os Camundangos' album all the time!
+
+AbrePor_0006_end
+
+##
+
+# XODÓ #
+
+AbrePor_0007_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / This box is empty, save for an issue of the gardening magazine 'XODÓ'...
+
+AbrePor_0007_end
+
+##
+
+# Achou o martelo! #
+
+AbrePor_0008_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / This hammer should do!
+
+AbrePor_0008_end
+
+##
+
+# Dentro do porão #
+
+AbrePor_0009_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / Uma carta...? Que estranho...
+
+AbrePor_0009_end
+
+##

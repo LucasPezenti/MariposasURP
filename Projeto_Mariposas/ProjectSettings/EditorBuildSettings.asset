@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/00_LanguageSelection.unity
+    guid: f03c13860dfb78e4a96ea082a981c961
+  - enabled: 1
+    path: Assets/Scenes/01_MainMenu.unity
+    guid: 2cc3530df3b8d1d44897dc1660007cf7
+  - enabled: 1
+    path: Assets/Scenes/02_Prologue.unity
+    guid: 5cf67a3f79d03614884ad6fc5c69e641
+  - enabled: 1
+    path: Assets/Scenes/03_PrologueEndScene.unity
+    guid: 39742fa3c72d37e40a4b12b5270f9638
+  - enabled: 1
+    path: Assets/Scenes/04_C01Pt01.unity
+    guid: e3154f30219aa834280bc3f79a0e3b49
+  - enabled: 1
+    path: Assets/Scenes/05_C01Pt02.unity
+    guid: 4e49ebe5c8e9ff5459f6f6799362a528
+  - enabled: 1
+    path: Assets/Scenes/06_C01Pt03.unity
+    guid: 548cb34cae8798240949d23413ea1368
+  - enabled: 1
+    path: Assets/Scenes/07_TestePuzzle.unity
+    guid: 850ef3efc68d0da44b270eef99d10797
+  m_configObjects: {}

@@ -1,0 +1,77 @@
+Line01 ; Thank you for playing!
+
+Line02 ; 	This game was developed as the Graduation Project in the Digital Games course, at Fatec São Caetano do Sul, from Centro Paula Souza.
+
+Line03 ; High Concept:
+
+Line04 ; 	Morgan Guedes Soares
+Line05 ; 	Gabriella Natalini Ribeiro
+
+Line06 ; Game Design:
+
+Line07 ; 	Melissa Xavier Falcão Branco
+Line08 ; 	Morgan Guedes Soares
+
+Line09 ; Level Design:
+
+Line10 ; 	Melissa Xavier Falcão Branco
+Line11 ; 	Morgan Guedes Soares
+
+Line12 ; Coding:
+
+Line13 ; 	Lucas Pezenti de Souza
+
+Line14 ; Implementation:
+
+Line15 ; 	Lucas Pezenti de Souza
+
+Line16 ; Concept Art:
+
+Line17 ; 	Gabriella Natalini Ribeiro
+Line18 ; 	Morgan Guedes Soares
+
+Line19 ; Game Art:
+
+Line20 ; 	Gabriella Natalini Ribeiro
+Line21 ; 	Morgan Guedes Soares
+
+Line22 ; Animation:
+
+Line23 ; 	Gabriella Natalini Ribeiro
+
+Line24 ; Sound Effects:
+
+Line25 ; 	Melissa Xavier Falcão Branco
+
+Line26 ; Music:
+
+Line27 ; 	Gabriella Natalini Ribeiro
+
+Line28 ; Academic Advisors:
+
+Line29 ; 	Alexandre Santaella Braga
+Line30 ; 	Raquel Silva
+Line31 ; 	Ricardo Baitz	
+Line32 ; 	Willians Monteiro da Silva
+
+Line33 ; Text Font:
+
+Line34 ; 	Zelda DX, by Brian Kent (kentpw@norwich.net), available at https://www.dafont.com/pt/zelda-dx.font
+
+Line35 ; Special Thanks:
+
+Line36 ; 	To our pets: Cloud Strife, Fatecat, Miyuki Narutomaki and Nina
+Line37 ; 	To our families
+Line38 ; 	To our friends
+Line39 ; 	To the academic staff of Fatec São Caetano do Sul
+Line40 ; 	To our academic coordinator, Alan Henrique Pardo de Carvalho
+Line41 ; 	Andrade Souza Gostautas Gritti
+Line42 ; 	César Neves Mosca
+Line43 ; 	Edgar Angelini Petrillo
+Line44 ;	Gabriel (Cas) Simon
+Line45 ; 	Guilherme Rocha Pedrina
+Line46 ; 	Josué Eduardo Menezes Junior
+Line47 ; 	Willian dos Santos Pedrosa
+
+Line48 ; 	The Aracnebula group recognizes the Armenian Genocide of 1915-1923 and its social and cultural impact until modern days. We express our empathy and support to the victims and their descendants.
+

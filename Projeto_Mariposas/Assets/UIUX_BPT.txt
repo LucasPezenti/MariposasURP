@@ -1,0 +1,143 @@
+** MENUS **
+
+** MAIN **
+
+PlayID / Iniciar
+
+OptionsID / Opções
+
+AboutID / Sobre
+
+CreditsID / Créditos
+
+QuitID / Sair
+
+BackID / Voltar
+
+** OPTIONS **
+
+SwitchLangID / Selecione o idioma
+
+LanguageID / Idioma
+
+PtbrID / Português
+
+EngID / English
+
+ConfirmID / Confirmar
+
+ControlsID / Controles
+
+VolumeID / Volume
+
+BrightnessID / Luminosidade
+
+** TELAS DE TRANSIÇÃO **
+
+DevText_01 / Desenvolvido por
+
+DevText_02 / Estúdio Aracnebula
+
+Transition_00 / Rússia, 1890
+
+Transition_01 / 2024
+
+Transition_02 / Mais tarde naquela noite
+
+** TUTORIAIS **
+
+Tutorial_00 / Pressione (A) ou (D) para andar
+
+Tutorial_01 / Pressione (Espaço) para avançar o diálogo
+
+Tutorial_02 / Pressione (E) para interagir
+
+Tutorial_03 / Pressione (W), (A), (S), ou (D) para andar
+
+Tutorial_04 / Clique no botão para ver mais detalhes
+
+Tutorial_05 / Pressione (Q) para examinar a caixa
+
+Tutorial_06 / Pressione (Q) ou (Espaço) para voltar
+
+Tutorial_07 / Pressione (TAB) para abrir o inventário
+
+Tutorial_08 / Pressione (W) ou (S) para navegar pelo inventário
+
+Tutorial_09 / Pressione (E) para usar o item selecionado
+
+Tutorial_10 / Pressione (Espaço) para fechar o inventário
+
+** AÇÕES DENTRO DO JOGO **
+
+Action_InteractID / (E) Interagir
+
+Action_ExamineID / (Q) Examinar
+
+Action_ReturnID / (Espaço) Voltar
+
+** ESCOLHAS DO JOGO **
+
+Choice_00 / Deseja enviar um e-mail aos proprietários?
+
+Choice_00_00 / Sim
+
+Choice_00_01 / Não
+
+** QUESTS DO JOGO **
+
+QuestName_00 / Lar Doce Lar
+
+QuestStep_00_00 / Descarregue as caixas da mudança nos respectivos cômodos de acordo com as imagens desenhadas em cada caixa
+
+QuestName_01 / Saúde em Primeiro Lugar
+
+QuestStep_01_00 / Tome o remédio receitado pelo Dr. Petrosyan
+
+QuestName_02 / Abaixo da Terra
+
+QuestStep_02_00 / Verifique a condição do porão da casa
+
+QuestName_03 / Hora da Janta
+
+QuestStep_03_00 / Entregue um prato para Sarkis no escritório
+
+QuestName_04 / Força Bruta
+
+QuestStep_04_00 / Encontre uma ferramenta para abrir a porta do porão
+
+QuestName_04 / Força Bruta
+
+QuestStep_04_00 / Encontre uma ferramenta para abrir a porta do porão
+
+
+
+
+LetterID_01 / “Cara senhora Gasparian, 
+
+LetterID_02 / Espero que sua viagem tenha sido tranquila. Estive acompanhando os e-mails entre você e meu irmão, Vassilii Nikolaevitch, e não pude deixar de reparar que está curiosa para saber a história da residência que alugaram. É claro que o fato de que a casa está vazia há tanto tempo chamaria sua atenção, e peço desculpas desde já pelo comportamento de meu irmão, que se recusa a saciar sua curiosidade, mudando de assunto e inventando desculpas. 
+
+LetterID_03 / A verdade é que Vassilii não queria que eu contasse a vocês sobre o passado desta casa, mas eu acredito que seja mais do que justo informá-los, visto que passarão por volta de seis meses vivendo nela. Pois, então, irei direto ao assunto. 
+
+LetterID_04 / Antes de pertencer a minha família, esta propriedade pertenceu a um senhor chamado Rodión Mikhailovitch Medvedev. Dizem que o senhor Medvedev era um velho teimoso e triste, que havia herdado a residência depois que seu irmão mais velho morrera, bem aqui nesta casa, junto da esposa e do filho. Entretanto, o velho, na realidade, não morava aqui. A casa ficava vazia a maior parte do ano, e o senhor Medvedev vinha por volta de maio, ficava uma semana no máximo, só pra fazer a manutenção necessária, e depois ia embora. 
+
+LetterID_05 / O mais provável é que a casa tinha algum valor emocional pra ele, e por isso ele sentia a necessidade de mantê-la. Ao mesmo tempo, era claro que estar aqui não lhe fazia bem. A cuidadora dele dizia que ele andava pelo corredor de noite falando sozinho, como se estivesse conversando com uma criança, e que chorava toda noite antes de dormir. Alguns dizem que era o fantasma de seu sobrinho morto, outros, que era uma filha que ele perdeu quando era jovem... mas ele mesmo nunca falou nada a respeito. 
+
+LetterID_06 / Quando ele morreu, Rodión Mikhailovitch fez um pedido estranho à sua filha, a senhora Nadejda Rodiónova. Ele pediu que ela mantivesse a casa, mas que jamais deixasse que ninguém morasse nela de novo. Apesar de não querer ir contra o desejo de seu pai, Nadejda não conseguiu convencer seu marido a gastar com a manutenção da casa. E então, ela ficou vazia e acabou abandonada por mais de 40 anos. 
+
+LetterID_07 / Após a morte da senhora Rodiónova, os filhos, que não tinham interesse em manter o desejo do avô Rodión, botaram a casa para leiloar e meu avô a comprou. Ele renovou o interior, consertou a infraestrutura, cuidou do terreno, e trouxe ela de volta à vida, com a intenção de usá-la como casa de campo. Meu avô e sua família chegaram a vir algumas vezes para passar o verão, mas... Havia algo estranho. Parecia que sempre que passavam tempo aqui, todos acabavam brigando. Logo, começaram a falar que tinha algo errado com a casa, e acabaram desistindo de vir. Meu avô, percebendo que tinha desperdiçado dinheiro, pegou raiva do lugar, e a residência acabou ficando parada por mais umas duas décadas. 
+
+LetterID_08 / Quando meu pai herdou a casa, ele decidiu que queria tentar dar alguma utilidade para ela e a botou para alugar, para que as pessoas passassem as férias aqui. Algumas pessoas até se interessaram, mas geralmente desistiam depois de vir ver a casa pessoalmente. Veja bem, não havia, de fato, nada de errado com ela. Apesar de velha, a casa era (e ainda é) muito bonita, com uma boa estrutura, bom aquecimento, em um local agradável... como você mesma pode ver, estando nela agora. Mesmo assim, parecia haver algo que espantava os clientes. 
+
+LetterID_09 / A única vez que meu pai conseguiu realmente alugar a casa foi para um casal com uma criança que veio pra ficar dois meses, mas acabou desistindo e indo embora no terceiro dia. Eles disseram que a casa tinha uma energia ruim. Disseram também que ouviam barulhos estranhos às vezes, como se ela fosse assombrada, e que seu filho não queria mais ficar aqui. Isso já faz sete anos... Desde então, ninguém mais morou aqui. 
+
+LetterID_10 / Como pode ver, senhora Gasparian, a casa não tem uma história muito atraente, e é por isso que Vassilii não queria que eu explicasse a situação a vocês. Ele, na verdade, não sabe que estou enviando esta carta, então eu agradeceria se você pudesse manter essa nossa conversa em sigilo. 
+
+LetterID_11 / Apesar de tudo, ainda confio que você e seu marido, sendo pessoas da ciência, não acreditarão neste tipo de ocorrência "sobrenatural". Eu mesma resolvi contar tudo apenas a título de curiosidade, mas acredito, tal qual meu irmão, que as histórias sejam apenas fruto de uma forte superstição, alimentada através das gerações, resultando em algum tipo de efeito placebo. 
+
+LetterID_12 / Espero que esta pequena história fantasiosa satisfaça sua curiosidade e traga ao seu dia um pouco de misticismo e imaginação, para distraí-la da mesmice do dia-a-dia. 
+
+LetterID_13 / Aproveite sua estada,
+LetterID_14 / Maria Nikolaevna Volkova."
+
+
