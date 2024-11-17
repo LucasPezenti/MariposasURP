@@ -425,13 +425,13 @@ MessageLine / 1 / Não sei...
 
 MessageLine / 0 / Eu tenho uma hipótese. Talvez um dimorfismo sexual muito gritante, que nem o do peixe-diabo negro, Melanocetus johnsonii.
 
-MessageLine / 0 / Os machos são tão diferentes das fêmeas que levou anos para-
+MessageLine / 0 / Os machos são tão diferentes das fêmeas que levou anos para...
 
 MessageLine / 1 / Anoush, eu sei, eu sou doutor em biologia, lembra?
 
 MessageLine / 0 / Só estava citando a título de comparação, desculpa...
 
-MessageLine / 0 / Mas... Como você sabe, só conseguiram obter menos de 10 exemplares de machos dessa espécie até hoje, então-
+MessageLine / 0 / Mas... Como você sabe, só conseguiram obter menos de 10 exemplares de machos dessa espécie até hoje, então...
 
 MessageLine / 1 / Eu já considerei essa hipótese, foi a primeira coisa que pensei. Não dá pra ter certeza de nada ainda. 
 

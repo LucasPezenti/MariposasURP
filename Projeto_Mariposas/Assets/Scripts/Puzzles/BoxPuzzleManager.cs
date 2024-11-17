@@ -30,8 +30,6 @@ public class BoxPuzzleManager : MonoBehaviour
 
             // Desativar alerta de interação
         }
-
-        
     }
 
     public void SwitchFurniture()

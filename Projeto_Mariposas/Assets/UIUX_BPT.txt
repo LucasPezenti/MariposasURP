@@ -42,31 +42,33 @@ Transition_00 / Rússia, 1890
 
 Transition_01 / 2024
 
-Transition_02 / 01:35am
+Transition_02 / 2:48 da manhã...
 
 ** TUTORIAIS **
 
-Tutorial_00 / Pressione (A) ou (D) para andar
+Tutorial_00 / Use A e D para andar
 
-Tutorial_01 / Pressione (Espaço) para avançar o diálogo
+Tutorial_01 / Use ESPAÇO para avançar o diálogo
 
-Tutorial_02 / Pressione (E) para interagir
+Tutorial_02 / Use E para interagir
 
-Tutorial_03 / Pressione (W), (A), (S), ou (D) para andar
+Tutorial_03 / Use W, A, S e D para andar
 
-Tutorial_04 / Clique no botão para ver mais detalhes
+Tutorial_04 / Clique no botão para mais detalhes
 
-Tutorial_05 / Pressione (Q) para examinar a caixa
+Tutorial_05 / Use Q para examinar uma caixa
 
-Tutorial_06 / Pressione (Q) ou (Espaço) para voltar
+Tutorial_06 / Use Q para voltar
 
-Tutorial_07 / Pressione (TAB) para abrir o inventário
+Tutorial_07 / Use TAB para abrir o inventário
 
-Tutorial_08 / Pressione (W) ou (S) para navegar pelo inventário
+Tutorial_08 / Use W e S para navegar no inventário
 
-Tutorial_09 / Pressione (E) para usar o item selecionado
+Tutorial_09 / Use E para selecionar um item
 
-Tutorial_10 / Pressione (Espaço) para fechar o inventário
+Tutorial_10 / Use ESPAÇO para voltar
+
+Tutorial_11 / Use F para ligar/desligar a lanterna
 
 ** AÇÕES DENTRO DO JOGO **
 
@@ -100,7 +102,7 @@ QuestStep_02_00 / Verifique a condição do porão da casa
 
 QuestName_03 / Hora da Janta
 
-QuestStep_03_00 / Entregue um prato para Sarkis no escritório
+QuestStep_03_00 / Vá até o escritório e chame Sarkis para jantar
 
 QuestName_04 / Força Bruta
 

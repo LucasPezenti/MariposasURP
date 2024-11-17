@@ -56,7 +56,8 @@ Line32 ; 	Willians Monteiro da Silva
 
 Line33 ; Text Font:
 
-Line34 ; 	Zelda DX, by Brian Kent (kentpw@norwich.net), available at https://www.dafont.com/pt/zelda-dx.font
+Line34 ;	FB Remington, by Fred Brutus (fredolino.meireles@gmail.com), available at https://www.dafont.com/pt/fb-remington.font
+Line34b ;	Zelda DX, by Brian Kent (kentpw@norwich.net), available at https://www.dafont.com/pt/zelda-dx.font
 
 Line35 ; Special Thanks:
 
@@ -66,6 +67,7 @@ Line38 ; 	To our friends
 Line39 ; 	To the academic staff of Fatec São Caetano do Sul
 Line40 ; 	To our academic coordinator, Alan Henrique Pardo de Carvalho
 Line41 ; 	Andrade Souza Gostautas Gritti
+Line41b ;	Arthur Barilli da Silva
 Line42 ; 	César Neves Mosca
 Line43 ; 	Edgar Angelini Petrillo
 Line44 ;	Gabriel (Cas) Simon

@@ -48,7 +48,7 @@ public class DialogueManager : MonoBehaviour
         messageText.text = messageDisplay.message;              // Mostra a mensagem
         Actor charDisplay = curChars[messageDisplay.charId];    // Pega na lista o personagem que está falando
         charName.text = charDisplay.name;                       // Mostra o nome do personagem
-        //charImage.sprite = charDisplay.sprite;                  // Mostra a sprite do personagem
+        charImage.sprite = charDisplay.sprite;                  // Mostra a sprite do personagem
         dialogueBox.SetActive(true);                            // Torna a caixa de diálogo visível
     }
     */
@@ -118,7 +118,9 @@ public class DialogueManager : MonoBehaviour
         activeMessage++;
         if(activeMessage < messageList.Count){
             DisplayMessage();
-        }else{
+        }
+        
+        else{
             onDialogue = false;
             dialogueBox.SetActive(false);
             activeMessage = 0;

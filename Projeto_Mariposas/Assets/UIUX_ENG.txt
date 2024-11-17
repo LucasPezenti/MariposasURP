@@ -42,31 +42,33 @@ Transition_00 / Russia, 1890
 
 Transition_01 / 2024
 
-Transition_02 / 01:35am
+Transition_02 / 2:48 AM...
 
 ** TUTORIAIS **
 
-Tutorial_00 / Press (A) or (D) to move
+Tutorial_00 / Use A and D to walk
 
-Tutorial_01 / Press (Space) to advance the dialogue
+Tutorial_01 / Use SPACEBAR to advance the dialogue
 
-Tutorial_02 / Press (E) to interact
+Tutorial_02 / Use E to interact
 
-Tutorial_03 / Press (W), (A), (S), or (D) to move
+Tutorial_03 / Use W, A, S and D to walk
 
-Tutorial_04 / Click on the button to see more details
+Tutorial_04 / Click the button for more details
 
-Tutorial_05 / Press (Q) to examine box
+Tutorial_05 / Use Q to examine a box
 
-Tutorial_06 / Press (Q) or (Space) to go back
+Tutorial_06 / Use Q to resume
 
-Tutorial_07 / Press (TAB) to open the inventory
+Tutorial_07 / Use TAB to open the inventory
 
-Tutorial_08 / Press (W) or (S) to navigate through the inventory
+Tutorial_08 / Use W and S to navigate the inventory
 
-Tutorial_09 / Press (E) to use the selected item
+Tutorial_09 / Use E to select an item
 
-Tutorial_10 / Press (Space) to close the inventory 
+Tutorial_10 / Use SPACEBAR to resume
+
+Tutorial_11 / Use F to turn the lantern on/off
 
 ** AÇÔES DENTRO DO JOGO **
 
@@ -100,7 +102,7 @@ QuestStep_02_00 / Check the basement's condition
 
 QuestName_03 / Dinner Time
 
-QuestStep_03_00 / Take some food to Sarkis in the office
+QuestStep_03_00 / Go to the office to tell Sarkis about dinner
 
 QuestName_04 / Brute Force
 

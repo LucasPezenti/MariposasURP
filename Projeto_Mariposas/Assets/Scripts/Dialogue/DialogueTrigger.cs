@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class DialogueTrigger : MonoBehaviour
@@ -12,6 +13,13 @@ public class DialogueTrigger : MonoBehaviour
     public bool repeat;
     public bool areaTrigger;
     public GameObject interactionObj;
+
+    private DialogueManager dialogueManager;
+
+    private void Start()
+    {
+        dialogueManager = FindObjectOfType<DialogueManager>();
+    }
 
     public void StartDialogue(){
         /*
@@ -27,12 +35,12 @@ public class DialogueTrigger : MonoBehaviour
             DialogueManager.onDialogue = true;
             if (!repeat)
             {
-                FindObjectOfType<DialogueManager>().LoadDialogue(startDialogueID, endDialogueID);
+                dialogueManager.LoadDialogue(startDialogueID, endDialogueID);
                 interactionObj.SetActive(false);
             }
             else
             {
-                FindObjectOfType<DialogueManager>().LoadDialogue(startDialogueID, endDialogueID);
+                dialogueManager.LoadDialogue(startDialogueID, endDialogueID);
             }
         }
     }

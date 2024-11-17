@@ -56,7 +56,8 @@ Line32 ; 	Willians Monteiro da Silva
 
 Line33 ; Fonte:
 
-Line34 ; 	Zelda DX, por Brian Kent (kentpw@norwich.net), disponível em https://www.dafont.com/pt/zelda-dx.font
+Line34 ; 	FB Remington, por Fred Brutus (fredolino.meireles@gmail.com), disponível em https://www.dafont.com/pt/fb-remington.font
+Line34b ;	Zelda DX, por Brian Kent (kentpw@norwich.net), disponível em https://www.dafont.com/pt/zelda-dx.font
 
 Line35 ; Agradecimentos Especiais:
 
@@ -66,6 +67,7 @@ Line38 ; 	Aos nossos amigos
 Line39 ; 	Ao corpo docente da Fatec São Caetano do Sul
 Line40 ; 	Ao nosso coordenador, Alan Henrique Pardo de Carvalho
 Line41 ; 	Andrade Souza Gostautas Gritti
+Line41b ;	Arthur Barilli da Silva
 Line42 ; 	César Neves Mosca
 Line43 ;	Edgar Angelini Petrillo
 Line44 ; 	Gabriel (Cas) Simon

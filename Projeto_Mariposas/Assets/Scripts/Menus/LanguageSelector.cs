@@ -12,6 +12,8 @@ public class LanguageSelector : MonoBehaviour
 
     private void Awake()
     {
+        gameManager = GameManager.GetInstance();
+        audioManager = AudioManager.GetAudioInstance();
         BPT_Btn.onClick.AddListener(SelectBPT);
         ENG_Btn.onClick.AddListener(SelectENG);
     }

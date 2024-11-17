@@ -425,13 +425,13 @@ MessageLine / 1 / Don't know...
 
 MessageLine / 0 / I have a hypothesis. It might be a very blatant sexual dimorphism, similar to that of the humpback anglerfish, Melanocetus johnsonii.
 
-MessageLine / 0 / The males are so different from the females that it took years to-
+MessageLine / 0 / The males are so different from the females that it took years to...
 
 MessageLine / 1 / Anoush, I know, I have a doctor's degree in biology, remember?
 
 MessageLine / 0 / I was just mentioning for the sake of comparison, sorry...
 
-MessageLine / 0 / But... As you know, to this day, they could only obtain less than 10 male samples of that species, so-
+MessageLine / 0 / But... As you know, to this day, they could only obtain less than 10 male samples of that species, so...
 
 MessageLine / 1 / I have already considered this hypothesis, it was the first thing I thought of. We can't be sure yet.
 
