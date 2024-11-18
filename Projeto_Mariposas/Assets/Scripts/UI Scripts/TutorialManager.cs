@@ -6,9 +6,7 @@ public class TutorialManager : MonoBehaviour
 {
     private GameManager gameManager;
 
-    [SerializeField] private UIElement[] tutorialElement;
-    [SerializeField] private Animator animator;
-    [SerializeField] private GameObject textObj;
+    [SerializeField] private UIElement[] tutorialList;
 
     private void Start()
     {
@@ -24,49 +22,14 @@ public class TutorialManager : MonoBehaviour
             foreach (string line in lines)
             {
                 string[] info = line.Split('/');
-                for (int i = 0; i < tutorialElement.Length; i++)
+                for(int i = 0; i < tutorialList.Length; i++)
                 {
-                    if (line.Contains(tutorialElement[i].textID))
+                    if (line.Contains(tutorialList[i].textID))
                     {
-                        tutorialElement[i].textToDisplay.text = info[1].Trim();
+                        tutorialList[i].textToDisplay.text = info[1].Trim();
                     }
                 }
             }
         }
-    }
-
-    public void DisplayTutorial(int elementIndex)
-    {
-
-    }
-
-    public void OpenTutorial()
-    {
-        animator.SetTrigger("Open");
-    }
-
-    public void CloseTutorial()
-    {
-        animator.SetTrigger("Close");
-    }
-
-    public void ShowMissionText()
-    {
-        textObj.SetActive(true);
-    }
-
-    public void HideMissionText()
-    {
-        textObj.SetActive(false);
-    }
-
-    public Animator GetAnimator()
-    {
-        return this.animator;
-    }
-
-    public void SetAnimOver()
-    {
-        animator.SetTrigger("AnimationOver");
     }
 }
