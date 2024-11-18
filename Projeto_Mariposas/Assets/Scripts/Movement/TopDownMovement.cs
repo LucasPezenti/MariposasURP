@@ -49,6 +49,8 @@ public class TopDownMovement : MonoBehaviour
     [SerializeField] private bool closeExamineDone;
     [SerializeField] private TutorialTrigger inventoryNavTutorial;
     [SerializeField] private bool inventoryNavDone;
+    [SerializeField] private TutorialTrigger closeInventoryTutorial;
+    [SerializeField] private bool closeInventoryDone;
 
 
     private void Awake()
@@ -74,9 +76,6 @@ public class TopDownMovement : MonoBehaviour
 
         hasBox = false;
 
-        examineTutorialDone = false;
-        closeExamineDone = false;
-        inventoryNavDone = false;
 
         onInventory = false;
 
@@ -204,6 +203,11 @@ public class TopDownMovement : MonoBehaviour
                 {
                     inventoryNavTutorial.OpenTutorial();
                     inventoryNavDone = true;
+                }
+                if (!closeInventoryDone)
+                {
+                    closeInventoryTutorial.OpenTutorial();
+                    closeInventoryDone = true;
                 }
             }
 

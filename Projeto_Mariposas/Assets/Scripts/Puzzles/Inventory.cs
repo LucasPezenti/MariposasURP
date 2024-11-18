@@ -61,8 +61,6 @@ public class Inventory : MonoBehaviour
     {
         isOpen = false;
         missionPills = true;
-
-        useItemDone = false;
     }
 
     // Update is called once per frame
