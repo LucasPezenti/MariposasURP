@@ -14,6 +14,7 @@ public class BoxPuzzleFinish : MonoBehaviour
     void Start()
     {
         boxPuzzleOver = false;
+        boxesLeft = 6;
     }
 
     public void FinishBoxPuzzle()

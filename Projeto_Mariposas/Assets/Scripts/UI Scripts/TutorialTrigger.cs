@@ -8,10 +8,15 @@ public class TutorialTrigger : MonoBehaviour
     [SerializeField] private GameObject textObj;
     [SerializeField] private KeyCode closeKey;
     [SerializeField] private BoxCollider2D triggerObj;
+    [SerializeField] private bool isOpen;
 
+    private void Start()
+    {
+        isOpen = false;
+    }
     private void Update()
     {
-        if (Input.GetKeyDown(closeKey))
+        if (isOpen && Input.GetKeyDown(closeKey))
         {
             CloseTutorial();
         }
@@ -30,6 +35,7 @@ public class TutorialTrigger : MonoBehaviour
     {
         animator.SetTrigger("Open");
         triggerObj.enabled = false;
+        isOpen = true;
     }
 
     public void CloseTutorial()
@@ -55,5 +61,10 @@ public class TutorialTrigger : MonoBehaviour
     public void SetAnimOver()
     {
         animator.SetTrigger("AnimationOver");
+    }
+
+    public bool GetIsOpen()
+    {
+        return this.isOpen;
     }
 }

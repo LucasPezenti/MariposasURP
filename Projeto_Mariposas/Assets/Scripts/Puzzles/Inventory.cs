@@ -44,6 +44,11 @@ public class Inventory : MonoBehaviour
     [SerializeField] private bool lanternOn;
     [SerializeField] private bool holdingLantern;
 
+    [Header("Tutorial")]
+    [SerializeField] private TutorialTrigger inventoryNavTutorial;
+    [SerializeField] private TutorialTrigger useItemTutorial;
+    [SerializeField] private bool useItemDone;
+
     //public static bool onInventory;
 
     private void Awake()
@@ -56,6 +61,8 @@ public class Inventory : MonoBehaviour
     {
         isOpen = false;
         missionPills = true;
+
+        useItemDone = false;
     }
 
     // Update is called once per frame
@@ -68,8 +75,17 @@ public class Inventory : MonoBehaviour
     {
         if (isOpen)
         {
-            if(Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+            if(Input.GetKeyDown(KeyCode.S))
             {
+                if (inventoryNavTutorial.GetIsOpen())
+                {
+                    inventoryNavTutorial.CloseTutorial();
+                }
+                if (!useItemDone)
+                {
+                    useItemTutorial.OpenTutorial();
+                    useItemDone = true;
+                }
                 selectId++;
                 if (selectId > 3)
                 {
@@ -78,8 +94,17 @@ public class Inventory : MonoBehaviour
                 selection.transform.position = selectionPoints[selectId].transform.position;
                 selection.transform.rotation = selectionPoints[selectId].transform.rotation;
             }
-            else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+            else if (Input.GetKeyDown(KeyCode.W))
             {
+                if (inventoryNavTutorial.GetIsOpen())
+                {
+                    inventoryNavTutorial.CloseTutorial();
+                }
+                if (!useItemDone)
+                {
+                    useItemTutorial.OpenTutorial();
+                    useItemDone = true;
+                }
                 selectId--;
                 if (selectId < 0)
                 {
@@ -91,7 +116,6 @@ public class Inventory : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                
                 if (selectId == 0 && hasPills) // Tomar remédios
                 {
                     TakePills();

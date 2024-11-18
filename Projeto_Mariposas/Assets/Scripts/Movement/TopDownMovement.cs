@@ -35,10 +35,19 @@ public class TopDownMovement : MonoBehaviour
     [SerializeField] private BoxPuzzleManager boxManager;
     [SerializeField] private ExamineManager examineManager;
     [SerializeField] private DialogueTrigger wrongBoxTrigger;
+    
 
     [Header("Inventory Info")]
     [SerializeField] private Inventory inventory;
     [SerializeField] private bool onInventory;
+
+    [Header("Tutorials")]
+    [SerializeField] private TutorialTrigger examineTutorial;
+    [SerializeField] private bool examineTutorialDone;
+    [SerializeField] private TutorialTrigger closeExamineTutorial;
+    [SerializeField] private bool closeExamineDone;
+    [SerializeField] private TutorialTrigger inventoryNavTutorial;
+    [SerializeField] private bool inventoryNavDone;
 
 
     private void Awake()
@@ -63,6 +72,10 @@ public class TopDownMovement : MonoBehaviour
         curInRange = inRangeOf.NOTHING;
 
         hasBox = false;
+
+        examineTutorialDone = false;
+        closeExamineDone = false;
+        inventoryNavDone = false;
 
         onInventory = false;
 
@@ -108,19 +121,27 @@ public class TopDownMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (curInRange == inRangeOf.DIALOGUE && !onInventory && !examineManager.isExamining) // Show dialogue
+            // Show dialogue
+            if (curInRange == inRangeOf.DIALOGUE && !onInventory && !examineManager.isExamining) 
             {
                 objInRange.GetComponent<DialogueTrigger>().StartDialogue();
             }
 
-            else if (curInRange == inRangeOf.BOX && !hasBox && !onInventory && !examineManager.isExamining) // Grab box
+            // Grab box
+            else if (curInRange == inRangeOf.BOX && !hasBox && !onInventory && !examineManager.isExamining) 
             {
                 Debug.Log("Pegou");
                 GrabBox(objInRange);
                 interactionAlert.TurnAlertOff();
+                if (!examineTutorialDone)
+                {
+                    examineTutorial.OpenTutorial();
+                    examineTutorialDone = true;
+                }
             }
 
-            else if (hasBox && curRoom == curBox.GetBoxRoom() && !onInventory && !examineManager.isExamining) // Unpack box
+            // Unpack box
+            else if (hasBox && curRoom == curBox.GetBoxRoom() && !onInventory && !examineManager.isExamining) 
             {
                 Debug.Log("Sala correta");
                 boxManager.Unpack(curRoom);
@@ -131,7 +152,8 @@ public class TopDownMovement : MonoBehaviour
                 curBox = null;
             }
 
-            else if (hasBox && curRoom != curBox.GetBoxRoom() && !onInventory && !examineManager.isExamining) // Wrong place
+            // Wrong place
+            else if (hasBox && curRoom != curBox.GetBoxRoom() && !onInventory && !examineManager.isExamining) 
             {
                 // Dialogo de "Lugar errado"
                 interactionAlert.TurnAlertOff();
@@ -153,6 +175,11 @@ public class TopDownMovement : MonoBehaviour
             if (hasBox && !examineManager.isExamining && !onInventory)
             {
                 examineManager.DisplayItem(curBox.GetBoxImage());
+                if (!closeExamineDone)
+                {
+                    closeExamineTutorial.OpenTutorial();
+                    closeExamineDone = true;
+                }
             }
             else if (hasBox && examineManager.isExamining)
             {
@@ -163,7 +190,7 @@ public class TopDownMovement : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.F)) // Turn flashlight on
         {
             inventory.SwitchLantern();
-            Debug.Log("can move = " + TDCanMove);
+            //Debug.Log("can move = " + TDCanMove);
         }
 
         else if (Input.GetKeyDown(KeyCode.Tab)) // Open inventory
@@ -172,6 +199,11 @@ public class TopDownMovement : MonoBehaviour
             { 
                 inventory.OpenInventory();
                 onInventory = true;
+                if (!inventoryNavDone)
+                {
+                    inventoryNavTutorial.OpenTutorial();
+                    inventoryNavDone = true;
+                }
             }
 
             else 
@@ -230,7 +262,7 @@ public class TopDownMovement : MonoBehaviour
             this.curRoom = collision.GetComponent<Room>().GetRoom();
             this.roomInstance = collision.GetComponent<Room>();
             this.boxManager = collision.GetComponent<BoxPuzzleManager>();
-            Debug.Log(curRoom);
+            //Debug.Log(curRoom);
             if (hasBox && !roomInstance.GetDone()) 
             { 
                 interactionAlert.TurnAlertOn(false); 
@@ -287,7 +319,7 @@ public class TopDownMovement : MonoBehaviour
             this.curRoom = Rooms.OUTSIDE;
             roomInstance = null;
             interactionAlert.TurnAlertOff();
-            Debug.Log(curRoom);
+            //Debug.Log(curRoom);
         }
 
     }
