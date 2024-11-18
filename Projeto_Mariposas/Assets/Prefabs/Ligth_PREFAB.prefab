@@ -108,7 +108,10 @@ MonoBehaviour:
   - {fileID: -1377154704, guid: 2ebd95c99abc8324fa0378c09e0e6891, type: 3}
   lightSource: {fileID: 2620927161522764805}
   blocker: {fileID: 1281583298083845663}
-  moths: []
+  moths:
+  - {fileID: 8855265242054589322}
+  - {fileID: 2819988811868927007}
+  - {fileID: 7390886039022460269}
   isOn: 0
 --- !u!114 &2620927161522764805
 MonoBehaviour:

@@ -8875,6 +8875,9 @@ MonoBehaviour:
   isDark: 0
   lanternOn: 0
   holdingLantern: 0
+  inventoryNavTutorial: {fileID: 0}
+  useItemTutorial: {fileID: 0}
+  useItemDone: 0
 --- !u!61 &516382583
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8967,7 +8970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e544deddde6f48bb4521a61545b04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExamineAlert: {fileID: 719428860}
+  ExamineAlert: {fileID: 0}
   holdSpot: {fileID: 1220275090}
   pickUpMask:
     serializedVersion: 2
@@ -8999,6 +9002,13 @@ MonoBehaviour:
   wrongBoxTrigger: {fileID: 0}
   inventory: {fileID: 516382582}
   onInventory: 0
+  hasInventory: 0
+  examineTutorial: {fileID: 0}
+  examineTutorialDone: 0
+  closeExamineTutorial: {fileID: 0}
+  closeExamineDone: 0
+  inventoryNavTutorial: {fileID: 0}
+  inventoryNavDone: 0
 --- !u!114 &516382589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10211,8 +10221,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 626672862}
     m_Modifications:
     - target: {fileID: 1159530328328305401, guid: 85d0adf091727f04e8c41b7d83b571dd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1159530328328305401, guid: 85d0adf091727f04e8c41b7d83b571dd, type: 3}
       propertyPath: elements.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1159530328328305401, guid: 85d0adf091727f04e8c41b7d83b571dd, type: 3}
       propertyPath: UIelements.Array.size
@@ -10261,11 +10275,11 @@ PrefabInstance:
     - target: {fileID: 1159530328328305401, guid: 85d0adf091727f04e8c41b7d83b571dd, type: 3}
       propertyPath: elements.Array.data[0].textToDisplay
       value: 
-      objectReference: {fileID: 719428859}
+      objectReference: {fileID: 0}
     - target: {fileID: 1159530328328305401, guid: 85d0adf091727f04e8c41b7d83b571dd, type: 3}
       propertyPath: elements.Array.data[1].textToDisplay
       value: 
-      objectReference: {fileID: 719428861}
+      objectReference: {fileID: 0}
     - target: {fileID: 1159530328328305401, guid: 85d0adf091727f04e8c41b7d83b571dd, type: 3}
       propertyPath: elements.Array.data[2].textToDisplay
       value: 
@@ -10281,7 +10295,7 @@ PrefabInstance:
     - target: {fileID: 1159530328328305401, guid: 85d0adf091727f04e8c41b7d83b571dd, type: 3}
       propertyPath: UIelements.Array.data[0].textToDisplay
       value: 
-      objectReference: {fileID: 719428861}
+      objectReference: {fileID: 0}
     - target: {fileID: 1159530328328305401, guid: 85d0adf091727f04e8c41b7d83b571dd, type: 3}
       propertyPath: UIelements.Array.data[1].textToDisplay
       value: 
@@ -10289,7 +10303,7 @@ PrefabInstance:
     - target: {fileID: 1159530328328305401, guid: 85d0adf091727f04e8c41b7d83b571dd, type: 3}
       propertyPath: UIelements.Array.data[2].textToDisplay
       value: 
-      objectReference: {fileID: 719428859}
+      objectReference: {fileID: 0}
     - target: {fileID: 1159530328328305401, guid: 85d0adf091727f04e8c41b7d83b571dd, type: 3}
       propertyPath: UIelements.Array.data[3].textToDisplay
       value: 
@@ -10890,33 +10904,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3836794231855625047, guid: a783b301d1055544aaf8c28ae35dbf2a, type: 3}
   m_PrefabInstance: {fileID: 719428857}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &719428859 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3836794233467293495, guid: a783b301d1055544aaf8c28ae35dbf2a, type: 3}
-  m_PrefabInstance: {fileID: 719428857}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &719428860 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3836794231691490052, guid: a783b301d1055544aaf8c28ae35dbf2a, type: 3}
-  m_PrefabInstance: {fileID: 719428857}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &719428861 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3836794232480573957, guid: a783b301d1055544aaf8c28ae35dbf2a, type: 3}
-  m_PrefabInstance: {fileID: 719428857}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &719428863 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3836794231855625046, guid: a783b301d1055544aaf8c28ae35dbf2a, type: 3}

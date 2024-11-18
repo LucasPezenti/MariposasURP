@@ -66,7 +66,7 @@ Tutorial_08 / Use W and S to navigate the inventory
 
 Tutorial_09 / Use E to select an item
 
-Tutorial_10 / Use SPACEBAR to resume
+Tutorial_10 / Use TAB to resume
 
 Tutorial_11 / Use F to turn the lantern on/off
 

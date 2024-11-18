@@ -40,6 +40,7 @@ public class TopDownMovement : MonoBehaviour
     [Header("Inventory Info")]
     [SerializeField] private Inventory inventory;
     [SerializeField] private bool onInventory;
+    [SerializeField] private bool hasInventory;
 
     [Header("Tutorials")]
     [SerializeField] private TutorialTrigger examineTutorial;
@@ -193,7 +194,7 @@ public class TopDownMovement : MonoBehaviour
             //Debug.Log("can move = " + TDCanMove);
         }
 
-        else if (Input.GetKeyDown(KeyCode.Tab)) // Open inventory
+        else if (Input.GetKeyDown(KeyCode.Tab) && hasInventory) // Open inventory
         {
             if (!onInventory && !examineManager.isExamining) 
             { 
