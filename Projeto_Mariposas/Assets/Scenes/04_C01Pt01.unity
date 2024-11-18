@@ -553,7 +553,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44654254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.1638947, y: -4.548713, z: -9.999859}
+  m_LocalPosition: {x: 1.9638947, y: -5.048713, z: -9.999859}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6285,6 +6285,7 @@ GameObject:
   - component: {fileID: 482004133}
   - component: {fileID: 482004132}
   - component: {fileID: 482004131}
+  - component: {fileID: 482004135}
   m_Layer: 3
   m_Name: Box - BabyRoom
   m_TagString: PickUp
@@ -6423,6 +6424,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &482004135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482004129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeaf2c4b0abd2c94fbcec36452bc5ae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startDialogueID: BoxOrder_0001_start
+  endDialogueID: BoxOrder_0001_end
+  repeat: 1
+  areaTrigger: 0
+  interactionObj: {fileID: 482004129}
 --- !u!1 &483119929
 GameObject:
   m_ObjectHideFlags: 0
@@ -7073,6 +7091,8 @@ GameObject:
   m_Component:
   - component: {fileID: 533148152}
   - component: {fileID: 533148159}
+  - component: {fileID: 533148164}
+  - component: {fileID: 533148163}
   - component: {fileID: 533148158}
   - component: {fileID: 533148157}
   - component: {fileID: 533148160}
@@ -7081,7 +7101,6 @@ GameObject:
   - component: {fileID: 533148156}
   - component: {fileID: 533148155}
   - component: {fileID: 533148154}
-  - component: {fileID: 533148163}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -7097,7 +7116,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 533148151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7197,7 +7216,9 @@ MonoBehaviour:
   curBox: {fileID: 0}
   boxManager: {fileID: 0}
   examineManager: {fileID: 575196059}
-  wrongBoxTrigger: {fileID: 0}
+  firstBoxTrigger: {fileID: 533148164}
+  wrongBoxTrigger: {fileID: 533148163}
+  boxPuzzleFinish: {fileID: 1517579578}
   inventory: {fileID: 0}
   onInventory: 0
   hasInventory: 1
@@ -7363,6 +7384,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startDialogueID: BoxWrong_0000_start
   endDialogueID: BoxWrong_0000_end
+  repeat: 1
+  areaTrigger: 0
+  interactionObj: {fileID: 533148151}
+--- !u!114 &533148164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533148151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeaf2c4b0abd2c94fbcec36452bc5ae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startDialogueID: BoxOrder_0000_start
+  endDialogueID: BoxOrder_0000_end
   repeat: 1
   areaTrigger: 0
   interactionObj: {fileID: 533148151}
@@ -31067,7 +31105,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1159530328328305401, guid: 85d0adf091727f04e8c41b7d83b571dd, type: 3}
       propertyPath: elements.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1159530328328305401, guid: 85d0adf091727f04e8c41b7d83b571dd, type: 3}
       propertyPath: UIelements.Array.size
@@ -33190,7 +33228,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106775367}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1638947, y: -4.548713, z: -9.999859}
+  m_LocalPosition: {x: 1.9638947, y: -5.048713, z: -9.999859}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34830,18 +34868,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1521803148}
-          m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-          m_MethodName: StartDialogue
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
         - m_Target: {fileID: 1592502710}
           m_TargetAssemblyTypeName: TutorialTrigger, Assembly-CSharp
           m_MethodName: OpenTutorial
@@ -36432,7 +36458,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330438936}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 0.5, z: 0}
+  m_LocalPosition: {x: -0.3, y: 1.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -36535,7 +36561,7 @@ MonoBehaviour:
   endDialogueID: CasaInt_0001_end
   repeat: 1
   areaTrigger: 0
-  interactionObj: {fileID: 0}
+  interactionObj: {fileID: 1330438936}
 --- !u!95 &1330438943
 Animator:
   serializedVersion: 5
@@ -38169,13 +38195,13 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521803145}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.4004249}
+  m_Offset: {x: 0.025907755, y: 0.4966274}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -38186,7 +38212,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 1.8008498}
+  m_Size: {x: 3.9481845, y: 1.6084448}
   m_EdgeRadius: 0
 --- !u!114 &1521803148
 MonoBehaviour:
@@ -38203,7 +38229,7 @@ MonoBehaviour:
   startDialogueID: CasaInt_0000_start
   endDialogueID: CasaInt_0000_end
   repeat: 0
-  areaTrigger: 0
+  areaTrigger: 1
   interactionObj: {fileID: 1521803145}
 --- !u!1 &1521896824
 GameObject:
@@ -45794,6 +45820,10 @@ PrefabInstance:
     - target: {fileID: 3884338642571777100, guid: 36214ee0619877041a1852c565811b85, type: 3}
       propertyPath: m_Name
       value: InteractCircle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884338642571777100, guid: 36214ee0619877041a1852c565811b85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36214ee0619877041a1852c565811b85, type: 3}

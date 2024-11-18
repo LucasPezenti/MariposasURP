@@ -34,7 +34,9 @@ public class TopDownMovement : MonoBehaviour
     [SerializeField] private PuzzleBox curBox;
     [SerializeField] private BoxPuzzleManager boxManager;
     [SerializeField] private ExamineManager examineManager;
+    [SerializeField] private DialogueTrigger firstBoxTrigger;
     [SerializeField] private DialogueTrigger wrongBoxTrigger;
+    [SerializeField] private BoxPuzzleFinish boxPuzzleFinish;
     
 
     [Header("Inventory Info")]
@@ -58,7 +60,6 @@ public class TopDownMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         holdObjectScript = GetComponent<HoldObjectScript>();
         inventory = GetComponent<Inventory>();
-        wrongBoxTrigger = GetComponent<DialogueTrigger>();
         boxManager = null;
         curBox = null;
 
@@ -124,20 +125,33 @@ public class TopDownMovement : MonoBehaviour
             // Show dialogue
             if (curInRange == inRangeOf.DIALOGUE && !onInventory && !examineManager.isExamining) 
             {
-                objInRange.GetComponent<DialogueTrigger>().StartDialogue();
+                //objInRange.GetComponent<DialogueTrigger>().StartDialogue();
             }
 
             // Grab box
             else if (curInRange == inRangeOf.BOX && !hasBox && !onInventory && !examineManager.isExamining) 
             {
-                Debug.Log("Pegou");
-                GrabBox(objInRange);
-                interactionAlert.TurnAlertOff();
-                if (!examineTutorialDone)
+                if (objInRange.GetComponent<PuzzleBox>().GetBoxRoom() == Rooms.BABYROOM
+                    && boxPuzzleFinish.GetBoxesLeft() > 1)
                 {
-                    examineTutorial.OpenTutorial();
-                    examineTutorialDone = true;
+                    objInRange.GetComponent<DialogueTrigger>().StartDialogue();
                 }
+                else
+                {
+                    if(boxPuzzleFinish.GetBoxesLeft() >= 6)
+                    {
+                        firstBoxTrigger.StartDialogue();
+                    }
+                    Debug.Log("Pegou");
+                    GrabBox(objInRange);
+                    interactionAlert.TurnAlertOff();
+                    if (!examineTutorialDone)
+                    {
+                        examineTutorial.OpenTutorial();
+                        examineTutorialDone = true;
+                    }
+                }
+                
             }
 
             // Unpack box

@@ -74,18 +74,33 @@ CasaInt_0001_end
 BoxWrong_0000_start
 ActorLine / Anoush / 2
 
-MessageLine / 0 / I can't leave this box here.
+MessageLine / 0 / This is not where this box should go...
 
 BoxWrong_0000_end
 
 ##
 
+# Comentário da Anoush sobre as caixas #
+
 BoxOrder_0000_start
 ActorLine / Anoush / 2
 
-MessageLine / 0 / I don't know where this is from. I'll try to take the other boxes in first.
+MessageLine / 0 / Sarkis' handwriting is so bad I need a drawing to even understand what he wrote...
 
 BoxOrder_0000_end
+
+##
+
+# IF Pegar a caixa do bebê antes das outras #
+
+BoxOrder_0001_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / ...
+
+MessageLine / 0 / I'll leave this box for last...
+
+BoxOrder_0001_end
 
 ##
 
@@ -569,5 +584,16 @@ ActorLine / Anoush / 2
 MessageLine / 0 / Uma carta...? Que estranho...
 
 AbrePor_0009_end
+
+##
+
+# Encontrando mariposas no porão #
+
+AbrePor_0010_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / There are so many moths here I can't even go through!
+
+AbrePor_0010_end
 
 ##

@@ -74,18 +74,33 @@ CasaInt_0001_end
 BoxWrong_0000_start
 ActorLine / Anoush / 2
 
-MessageLine / 0 / Não posso deixar essa caixa aqui.
+MessageLine / 0 / Não é aqui que vai essa caixa...
 
 BoxWrong_0000_end
 
 ##
 
+# Comentário da Anoush sobre as caixas #
+
 BoxOrder_0000_start
 ActorLine / Anoush / 2
 
-MessageLine / 0 / Não sei para onde levar essa caixa. Melhor levar as outras primeiro.
+MessageLine / 0 / A letra do Sarkis é tão ruim que precisa até de um desenho pra eu entender o que ele escreveu...
 
 BoxOrder_0000_end
+
+##
+
+# IF Pegar a caixa do bebê antes das outras #
+
+BoxOrder_0001_start
+ActorLine / Anoush / 2
+
+MessageLine / 0 / ...
+
+MessageLine / 0 / Vou deixar essa caixa por último...
+
+BoxOrder_0001_end
 
 ##
 
@@ -572,11 +587,13 @@ AbrePor_0009_end
 
 ##
 
-MothsPor_0010_start
+# Encontrando mariposas no porão #
+
+AbrePor_0010_start
 ActorLine / Anoush / 2
 
-MessageLine / 0 / São tantas mariposas que eu nem consigo passar!
+MessageLine / 0 / Tem tantas mariposas aqui que não consigo nem passar!
 
-MothsPor_0010_end
+AbrePor_0010_end
 
 ##

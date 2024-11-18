@@ -43,4 +43,9 @@ public class BoxPuzzleFinish : MonoBehaviour
             FinishBoxPuzzle();
         }
     }
+
+    public int GetBoxesLeft()
+    {
+        return this.boxesLeft;
+    }
 }
