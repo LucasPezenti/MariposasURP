@@ -100,17 +100,18 @@ QuestName_02 / Abaixo da Terra
 
 QuestStep_02_00 / Verifique a condição do porão da casa
 
-QuestName_03 / Hora da Janta
+QuestName_03 / Que fome...
 
-QuestStep_03_00 / Vá até o escritório e chame Sarkis para jantar
+QuestStep_03_00 / Prepare a comida para a janta
 
-QuestName_04 / Força Bruta
+QuestName_04 / Hora da Janta
 
-QuestStep_04_00 / Encontre uma ferramenta para abrir a porta do porão
+QuestStep_04_00 / Vá até o escritório e chame Sarkis para jantar
 
-QuestName_04 / Força Bruta
+QuestName_05 / Força Bruta
 
-QuestStep_04_00 / Encontre uma ferramenta para abrir a porta do porão
+QuestStep_05_00 / Encontre uma ferramenta para abrir a porta do porão
+
 
 
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class letterReader : MonoBehaviour
+public class LetterReader : MonoBehaviour
 {
     public GameObject[] texts;
     public UIElement[] letterLines;

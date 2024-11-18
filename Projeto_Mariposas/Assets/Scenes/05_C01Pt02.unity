@@ -8999,7 +8999,9 @@ MonoBehaviour:
   curBox: {fileID: 0}
   boxManager: {fileID: 0}
   examineManager: {fileID: 719428863}
+  firstBoxTrigger: {fileID: 0}
   wrongBoxTrigger: {fileID: 0}
+  boxPuzzleFinish: {fileID: 0}
   inventory: {fileID: 516382582}
   onInventory: 0
   hasInventory: 0
@@ -9009,6 +9011,8 @@ MonoBehaviour:
   closeExamineDone: 0
   inventoryNavTutorial: {fileID: 0}
   inventoryNavDone: 0
+  closeInventoryTutorial: {fileID: 0}
+  closeInventoryDone: 0
 --- !u!114 &516382589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13699,7 +13703,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3535218477347385691, guid: 3dd2d303ba50d7f4781943329fb16172, type: 3}
       propertyPath: missionList.Array.data[0].textID
-      value: QuestName_03
+      value: QuestName_04
       objectReference: {fileID: 0}
     - target: {fileID: 3535218477347385691, guid: 3dd2d303ba50d7f4781943329fb16172, type: 3}
       propertyPath: missionList.Array.data[1].textID
@@ -13707,7 +13711,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3535218477347385691, guid: 3dd2d303ba50d7f4781943329fb16172, type: 3}
       propertyPath: missionStepsList.Array.data[0].textID
-      value: QuestStep_03_00
+      value: QuestStep_04_00
       objectReference: {fileID: 0}
     - target: {fileID: 3535218477347385691, guid: 3dd2d303ba50d7f4781943329fb16172, type: 3}
       propertyPath: missionStepsList.Array.data[1].textID

@@ -100,13 +100,19 @@ QuestName_02 / Under the Ground
 
 QuestStep_02_00 / Check the basement's condition
 
-QuestName_03 / Dinner Time
+QuestName_03 / So hungry...
 
-QuestStep_03_00 / Go to the office to tell Sarkis about dinner
+QuestStep_03_00 / Fix something for dinner
 
-QuestName_04 / Brute Force
+QuestName_04 / Dinner Time
 
-QuestStep_04_00 / Find a tool to open the basement door
+QuestStep_04_00 / Go to the office to tell Sarkis about dinner
+
+QuestName_05 / Brute Force
+
+QuestStep_05_00 / Find a tool to open the basement door
+
+
 
 LetterID_01 / “Dear Mrs. Gasparian, 
 

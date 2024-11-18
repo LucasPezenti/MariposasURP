@@ -25,7 +25,12 @@ public class DialogueManager : MonoBehaviour
     Message[] curMessages;
     Actor[] curChars;
     int activeMessage = 0;
-    public static bool onDialogue = false;
+    public static bool onDialogue;
+
+    private void Start()
+    {
+        onDialogue = false;
+    }
 
     //  Método manual, colocando os diálogos no unity pelo DialogueTrigger
     /*
