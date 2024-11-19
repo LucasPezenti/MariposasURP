@@ -5,23 +5,27 @@ using UnityEngine;
 public class LetterPiece : MonoBehaviour
 {
     [SerializeField] private LetterReader reader;
-    [SerializeField] private int numOfMessages;
+    [SerializeField] private string[] startID;
+    [SerializeField] private string[] endID;
+    [SerializeField] private int pieceIndex;
+    [SerializeField] private bool isLastPiece;
     [SerializeField] private GameObject letterObj;
 
-    // Start is called before the first frame update
-    void Start()
+    public void TriggerLetter()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        pieceIndex = reader.GetPiecesLeft() - 1;
+        reader.LoadLetterText(startID[pieceIndex], endID[pieceIndex], isLastPiece);
+        letterObj.SetActive(false);
     }
 
     public void SetLetterPieceActive(bool isActive)
     {
         letterObj.SetActive(isActive);
     }
+}
+
+[System.Serializable]
+public class Piece
+{
+    public string message;
 }

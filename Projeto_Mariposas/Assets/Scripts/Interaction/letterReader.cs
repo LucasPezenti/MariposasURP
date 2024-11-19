@@ -5,25 +5,27 @@ using UnityEngine;
 
 public class LetterReader : MonoBehaviour
 {
-    public GameObject[] texts;
-    public UIElement[] letterLines;
-    GameManager gameManager;
+    private GameManager gameManager;
 
     public TextMeshProUGUI messageText;
 
-    private string idInicial;
-    private string idFinal;
+    [SerializeField] private int piecesLeft;
+    [SerializeField] private bool lastPage;
 
     public GameObject letterArea;
 
     private int activeMessage = 0;
     public static bool readingLetter = false;
 
+    private List<Piece> pieceList = new List<Piece>();
+    Piece[] curPiece;
+    private const string idPiece = "LetterID";
+
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GameManager.GetInstance();
-        
+        lastPage = false;
     }
 
     // Update is called once per frame
@@ -35,45 +37,60 @@ public class LetterReader : MonoBehaviour
         }
     }
 
-
-
-    public void LoadLetterText()
+    public void LoadLetterText(string idInicial, string idFinal, bool isLastPage)
     {
         if (System.IO.File.Exists(gameManager.GetUIFilePath()))
         {
+            lastPage = isLastPage;
             activeMessage = 0;
+            bool startReading = false;
+
             string[] lines = System.IO.File.ReadAllLines(gameManager.GetUIFilePath());
             foreach (string line in lines)
             {
-                string[] info = line.Split('/');
-                for (int i = 0; i < letterLines.Length; i++)
+                if (line.Contains(idInicial))
                 {
+                    startReading = true;
+                    continue;
+                }
 
-                    if (line.Contains(letterLines[i].textID))
+                else if (line.Contains(idFinal))
+                {
+                    break;
+                }
+
+                if (startReading)
+                {
+                    string[] info = line.Split('/');
+                    if (line.Contains(idPiece))
                     {
-                        letterLines[i].textToDisplay.text = info[1].Trim();
+                        pieceList.Add(new Piece
+                        {
+                            message = info[1].Trim()
+                        });       
                     }
                 }
             }
+            DisplayLetter();
         }
-        DisplayLetter();
+        else
+        {
+            Debug.Log("O arquivo não foi encontrado.");
+        }
     }
 
     public void DisplayLetter()
     {
-        for (int i = 0; i < letterLines.Length; i++)
-        {
-            texts[i].SetActive(false);
-        }
+        Piece pieceToDisplay = pieceList[activeMessage];
+        messageText.text = pieceToDisplay.message;
         readingLetter = true;
-        texts[activeMessage].SetActive(true);
         letterArea.SetActive(true);
     }
 
     public void NextLetterPager()
     {
         activeMessage++;
-        if (activeMessage < letterLines.Length)
+        if (activeMessage < pieceList.Count)
         {
             DisplayLetter();
         }
@@ -82,7 +99,18 @@ public class LetterReader : MonoBehaviour
             readingLetter = false;
             letterArea.SetActive(false);
             activeMessage = 0;
-            FindObjectOfType<ChangeLevel>().FadeToLevel(1);
+            piecesLeft--;
+            pieceList.Clear();
+            if (lastPage)
+            {
+                FindObjectOfType<ChangeLevel>().FadeToLevel(1);
+            }
+            
         }
+    }
+
+    public int GetPiecesLeft()
+    {
+        return this.piecesLeft;
     }
 }
